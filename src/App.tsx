@@ -1,7 +1,12 @@
-//imported components
+//router
 import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
+
+//images
 import logo from "./assets/logo.png";
+
+//css
 import "./index.css";
+
 // pages
 import About from "./pages/about/About";
 import Home from "./pages/home/Home";

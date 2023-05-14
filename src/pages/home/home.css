@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ruthie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -10,10 +12,11 @@
   /*Colour variables*/
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-dominant: #9e7940;
+  --color-dominant-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-black-light: rgba(0, 0, 0, 0.664);
+  --color-black: rgb(0, 0, 0);
 
   --transition: all 400ms ease;
 
@@ -22,7 +25,7 @@
   --container-width-ms: 90%;
 }
 
-body {
+.container-home {
   font-family: "poppins";
 }
 
@@ -69,7 +72,22 @@ body {
   font-weight: bold;
 }
 
-/* Type swritter */
+.hero1 {
+  font-family: "Ruthie", cursive;
+  font-size: 30px;
+  color: var(--color-dominant);
+}
+
+.hero2 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 60px;
+  color: var(--color-white);
+}
+
+.hero3 {
+  color: var(--color-white);
+}
+/* Type writter */
 .container {
   display: flex;
   justify-content: center;
@@ -84,14 +102,14 @@ body {
   width: 28.5ch;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 4px solid #ffffff;
+  border-right: 4px solid var(--color-white);
   animation: cursor 1s step-start infinite, text 2s steps(30) alternate infinite;
 }
 
 @keyframes cursor {
   0%,
   100% {
-    border-color: #ffffff;
+    border-color: var(--color-white);
   }
 }
 
@@ -107,7 +125,7 @@ body {
 .hero-text h1 {
   font-size: 48px;
   font-weight: bold;
-  color: #fff;
+  color: var(--color-white);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
 }
@@ -117,8 +135,8 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 0;
   font-size: 14px;
-  color: #fff;
-  background-color: #ff8000;
+  color: var(--color-white);
+  background-color: var(--color-dominant);
   padding: 10px 30px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
@@ -131,15 +149,78 @@ body {
   transition: 1000ms;
   padding: 10px 50px;
   transform: translateY(-0px);
-  background-color: #ff8000e2;
-  color: #000000;
+  background-color: var(--color-dominant);
+  color: var(--color-white);
   border: none;
   cursor: pointer;
 }
 
+/************* Section divider - Destinations intro [With parallax] ****************/
+section.parallax {
+  position: relative;
+  height: auto;
+  padding: 180px 0px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section.parallax:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  content: " ";
+}
+section.parallax h1,
+h2 {
+  position: relative;
+  z-index: 101;
+  text-align: center;
+}
+.intro1 {
+  padding-top: 5rem;
+  font-family: "Ruthie", cursive;
+  font-size: 40px;
+  color: var(--color-dominant);
+  text-align: center;
+}
+
+.intro2-light {
+  font-family: "Abril Fatface", cursive;
+  font-size: 50px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.intro2-dark {
+  font-family: "Abril Fatface", cursive;
+  font-size: 50px;
+  color: var(--color-black);
+  text-align: center;
+}
+.intro3-dark {
+  color: var(--color-black-light);
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* bg image for parallax section*/
+section.parallax.parallax-home {
+  background-image: url("../../assets/banner/banner-2.png");
+  background-position: 10% 10%;
+}
+
 /*********************** Featured Destinations ******************************/
 #destinations {
-  background-color: #f5f5f5;
+  padding-top: 5rem;
+  background-color: var(--color-white);
   padding: 0 10%;
   margin: 10px auto;
   text-transform: capitalize;
@@ -158,11 +239,11 @@ body {
 
 .destination {
   height: auto;
-  padding: 20px;
+  padding: 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  background-color: var(--color-white);
   transition: all 0.3s ease-in-out;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .destination:hover {
@@ -175,36 +256,42 @@ body {
   height: 200px;
   object-fit: cover;
   margin-bottom: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .destination h3 {
   font-size: 24px;
   margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 .destination p {
   font-size: 16px;
   margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 .destination a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff8000e2;
-  color: #fff;
+  background-color: var(--color-dominant);
+  color: var(--color-white);
   text-decoration: none;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .destination a:hover {
-  background-color: #818181;
-  outline: #0056b3;
+  background-color: var(--color-dominant-variant);
+  color: var(--color-dominant);
 }
 
 /************************** Popular packages *****************************/
 #popular-packages {
-  background-color: #f5f5f5;
+  background-color: var(--color-white);
   padding: 0 10%;
   margin: 10px auto;
   text-transform: capitalize;
@@ -223,11 +310,10 @@ body {
 
 .package {
   height: auto;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  box-shadow: 0 0 10px var(--color-black-light);
+  background-color: var(--color-white);
   transition: all 0.3s ease-in-out;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .package:hover {
@@ -240,31 +326,37 @@ body {
   height: 200px;
   object-fit: cover;
   margin-bottom: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .package h3 {
   font-size: 24px;
   margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 .package p {
   font-size: 16px;
   margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 .package a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff8000e2;
-  color: #fff;
+  background-color: var(--color-dominant);
+  color: var(--color-white);
   text-decoration: none;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .package a:hover {
   background-color: #818181;
-  outline: #ff8000e2;
+  outline: var(--color-dominant);
 }
 
 /************************ Footer [Copied on every page] *************************/
@@ -272,13 +364,14 @@ footer {
   background-size: cover;
   background-position: center;
   padding: 60px 0;
+  background-image: url(../../assets/footer/footer-BG.avif);
 }
 
 .container-footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  color: white;
+  color: var(--color-white);
 }
 .footer-row {
   display: flex;
@@ -295,7 +388,7 @@ ul {
 
 .footer-col h4 {
   font-size: 18px;
-  color: #ffffff;
+  color: var(--color-white);
   text-transform: capitalize;
   margin-bottom: 30px;
   position: relative;
@@ -306,7 +399,7 @@ ul {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #ff8000e2;
+  background-color: var(--color-dominant);
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -319,15 +412,15 @@ ul {
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: #ffffff;
+  color: var(--color-white);
   text-decoration: none;
   font-weight: 300;
-  color: #ffffff;
+  color: var(--color-white);
   display: block;
 }
 
 .footer-col ul li a:hover {
-  color: #ff8000e2;
+  color: var(--color-dominant);
   padding-left: 10px;
 }
 
@@ -369,7 +462,7 @@ ul {
 }
 
 .follow-us li a:hover {
-  background-color: #ff8000e2;
+  background-color: var(--color-dominant);
 }
 
 .logo-footer img {
@@ -380,43 +473,13 @@ ul {
 
 .logo-footer p {
   font-size: 14px;
-  color: #ffffff;
+  color: var(--color-white);
   line-height: 1.5;
-}
-
-.newsletter form {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.newsletter input[type="email"] {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 3px;
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-.newsletter button[type="submit"] {
-  background-color: #ff8000e2;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.newsletter button[type="submit"]:hover {
-  background-color: #333;
 }
 
 .footer-bottom {
   text-align: center;
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 14px;
   padding-top: 20px;
   border-top: 1px solid #ddd;
@@ -424,7 +487,7 @@ ul {
 }
 
 .footer-bottom a {
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
 }
 

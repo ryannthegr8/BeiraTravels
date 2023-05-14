@@ -1,3 +1,8 @@
+:root {
+  /* Color variables */
+  --color-dominant: #9e7940;
+}
+
 /*********************************** Nav bar *****************************/
 nav {
   display: flex;
@@ -31,7 +36,7 @@ header nav .nav-links a {
 }
 
 .nav-links a:hover {
-  color: #ff8000;
+  color: var(--color-dominant);
 }
 
 /* Nav links underline hover animation*/
@@ -49,7 +54,7 @@ header nav .nav-links a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #ff8000;
+  background-color: var(--color-dominant);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -59,4 +64,8 @@ header nav .nav-links a {
   transform-origin: bottom left;
 }
 
+.nav-links a.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 /* Hamburger menu */
