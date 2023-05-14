@@ -1,5 +1,11 @@
+//icons
+import { FaFacebookF, FaPinterest } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
 //css
 import "./home.css";
+import "../../index.css";
 
 //images
 import Banner from "../../assets/banner/banner-3.png";
@@ -30,14 +36,15 @@ function Home() {
               <p className="hero2">Journey of Adventure and Memories</p>
               <p className="hero3">
                 Planning a trip can be overwhelming, which is why we're here to
-                take care of everything for you.
+                take care of everything for you
               </p>
               <a href="">
-                <button className="hero-button">Book now</button>
+                <button className="hero-button">Book Now</button>
               </a>
             </div>
           </section>
 
+          {/* Intro to the subject */}
           <section className="home-intro">
             <p className="intro1">Hello Dear</p>
             <p className="intro2-dark">We are Beira Travels!</p>
@@ -62,78 +69,83 @@ function Home() {
           <section id="destinations">
             <div className="container-destinations">
               <div className="destination">
-                <img src={MaasaiMara} alt="destination 1" />
+                <img src={MaasaiMara} alt="Maasai Mara" />
                 <h3>Maasai Mara</h3>
                 <p>
                   Enjoy the beautiful beaches of Hawaii with this all-inclusive
                   package!
                 </p>
-                <a href="#">More info</a>
+                <a href="/destinations">More info</a>
               </div>
               <div className="destination">
-                <img src={Amboseli} alt="destination 2" />
+                <img src={Amboseli} alt="Amboseli" />
                 <h3>Amboseli</h3>
                 <p>
                   Explore the historic streets of Rome with this affordable
                   package!
                 </p>
-                <a href="#">More info</a>
+                <a href="/destinations">More info</a>
               </div>
               <div className="destination">
-                <img src={lNakuru} alt="destination 3" />
+                <img src={lNakuru} alt="Lake Nakuru" />
                 <h3>Lake Nakuru</h3>
                 <p>
                   Experience the magic of Disney World with this family-friendly
                   package!
                 </p>
-                <a href="#">More info</a>
+                <a href="/destinations">More info</a>
               </div>
               <div className="destination">
-                <img src={Watamu} alt="destination 3" />
+                <img src={Watamu} alt="Watamu" />
                 <h3>Watamu</h3>
                 <p>
                   Experience the magic of Disney World with this family-friendly
                   package!
                 </p>
-                <a href="#">More info</a>
+                <a href="/destinations">More info</a>
               </div>
               <div className="destination">
-                <img src={MtKenya} alt="destination 3" />
+                <img src={MtKenya} alt="Mount Kenya" />
                 <h3>Mount Kenya</h3>
                 <p>
                   Experience the magic of Disney World with this family-friendly
                   package!
                 </p>
-                <a href="#">More info</a>
+                <a href="/destinations">More info</a>
               </div>
               <div className="destination">
-                <img src={Tsavo} alt="destination 3" />
+                <img src={Tsavo} alt="Tsavo" />
                 <h3>Tsavo national park</h3>
                 <p>
                   Experience the magic of Disney World with this family-friendly
                   package!
                 </p>
-                <a href="#">More info</a>
+                <a href="/destinations">More info</a>
               </div>
             </div>
           </section>
-          {/* <!-- End of featured destiations -->
+          {/* <!-- End of featured destiations --> */}
 
-      <!-- Popular packages 
+          {/* Section divider - Popular packages intro [With parallax] */}
+          <section className="parallax parallax-home">
+            <div className="container-parallax">
+              <h2 className="intro1">Memorable Experience</h2>
+              <h1 className="intro2-light">Popoular Packages</h1>
+            </div>
+          </section>
+
+          {/* <!-- Popular packages 
                             =====================================================--> */}
           <section id="popular-packages">
-            <div className="heading-packages">
-              <h2>Popular Packages</h2>
-            </div>
             <div className="container-packages">
               <div className="package">
-                <img src={MombasaPackage} alt="Package 1" />
+                <img src={MombasaPackage} alt="Mombasa" />
                 <h3>5 Days in Watamu</h3>
                 <p>
                   Enjoy the beautiful beaches of Hawaii with this all-inclusive
                   package!
                 </p>
-                <a href="#">More info</a>
+                <a href="/packages">More info</a>
               </div>
               <div className="package">
                 <img src={Package2} alt="Package 2" />
@@ -154,6 +166,16 @@ function Home() {
                 <a href="#">More info</a>
               </div>
             </div>
+            <section className="home-intro">
+              <p className="intro1">Hello Dear</p>
+              <p className="intro2-dark">We are Beira Travels!</p>
+              <p className="intro3-dark">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+                nostrum, quidem modi corporis illum sint ullam voluptate nobis!
+                Amet, ea necessitatibus numquam impedit cupiditate asperiores
+                eum reprehenderit fugiat debitis neque.
+              </p>
+            </section>
           </section>
           {/* <!-- End of popular packages --> */}
         </main>
@@ -164,19 +186,19 @@ function Home() {
           <div className="container-footer">
             <div className="footer-row">
               <div className="footer-col">
-                <h4>company</h4>
+                <h4>Quick Access</h4>
                 <ul>
                   <li>
-                    <a href="#">about us</a>
+                    <a href="/about">About Us</a>
                   </li>
                   <li>
-                    <a href="#">our services</a>
+                    <a href="/services">Our Services</a>
                   </li>
                   <li>
-                    <a href="#">Privacy policy</a>
+                    <a href="/contact">Destinations</a>
                   </li>
                   <li>
-                    <a href="#">affiliate program</a>
+                    <a href="/packages">Packages</a>
                   </li>
                 </ul>
               </div>
@@ -184,36 +206,36 @@ function Home() {
                 <h4>get help</h4>
                 <ul>
                   <li>
-                    <a href="#">FAQ</a>
+                    <a href="/contact">Contact us</a>
                   </li>
                   <li>
-                    <a href="#">Shipping</a>
+                    <a href="/contact">Reschedul booking</a>
                   </li>
                   <li>
-                    <a href="#">returns</a>
+                    <a href="/contact">Cancel Booking</a>
                   </li>
                   <li>
-                    <a href="#">order status</a>
+                    <a href="/contact">Booking status</a>
                   </li>
                   <li>
-                    <a href="#"> payment options</a>
+                    <a href="/contact"> payment options</a>
                   </li>
                 </ul>
               </div>
               <div className="footer-col">
-                <h4>online shop</h4>
+                <h4>Frequent services</h4>
                 <ul>
                   <li>
-                    <a href="#">Watch</a>
+                    <a href="/contact">Business Tours</a>
                   </li>
                   <li>
-                    <a href="#">bag</a>
+                    <a href="/contact">Hotel Reservatins</a>
                   </li>
                   <li>
-                    <a href="#">shoes</a>
+                    <a href="/contact">Flight Booking</a>
                   </li>
                   <li>
-                    <a href="#">dress</a>
+                    <a href="/contact">Tours and services</a>
                   </li>
                 </ul>
               </div>
@@ -225,22 +247,22 @@ function Home() {
                     <ul>
                       <li>
                         <a href="#">
-                          <i className="fa-brands fa-facebook"></i>
+                          <FaFacebookF />
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i className="fa-brands fa-twitter"></i>
+                          <FaTwitter />
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i className="fa-brands fa-instagram"></i>
+                          <FaInstagram />
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i className="fa-brands fa-linkedin-in"></i>
+                          <FaPinterest />
                         </a>
                       </li>
                     </ul>
