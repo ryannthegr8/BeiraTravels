@@ -2,6 +2,7 @@
 import { FaFacebookF, FaPinterest } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa";
 
 //css
 import "./home.css";
@@ -28,8 +29,6 @@ function Home() {
           <section className="hero">
             <div className="hero-slideshow">
               <img src={Banner} alt="Banner 1" />
-              {/* <!-- <img src="./assets/banner/banner-2.jpg" alt="Banner 2" />
-          <img src="./assets/banner/banner-3.jpg" alt="Banner 3" /> --> */}
             </div>
             <div className="hero-text">
               <p className="hero1">Feel The Love of Exploring</p>
@@ -178,6 +177,10 @@ function Home() {
             </section>
           </section>
           {/* <!-- End of popular packages --> */}
+
+          <a href="#" className="to-top">
+            <FaArrowUp />
+          </a>
         </main>
 
         {/* <!-- Footer [Copied on each page] 
@@ -209,7 +212,7 @@ function Home() {
                     <a href="/contact">Contact us</a>
                   </li>
                   <li>
-                    <a href="/contact">Reschedul booking</a>
+                    <a href="/contact">Reschedule booking</a>
                   </li>
                   <li>
                     <a href="/contact">Cancel Booking</a>
@@ -229,7 +232,7 @@ function Home() {
                     <a href="/contact">Business Tours</a>
                   </li>
                   <li>
-                    <a href="/contact">Hotel Reservatins</a>
+                    <a href="/contact">Hotel Reservations</a>
                   </li>
                   <li>
                     <a href="/contact">Flight Booking</a>
@@ -256,7 +259,7 @@ function Home() {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/beira_travels_/">
                           <FaInstagram />
                         </a>
                       </li>
@@ -280,10 +283,8 @@ function Home() {
             </div>
           </div>
         </footer>
-        {/* <!-- Script files 
-                      ==========================================================--> */}
-        {/* <script src="./js/slideshow-jquery.js"></script> */}
       </div>
+      <a href=""></a>
     </>
   );
 }

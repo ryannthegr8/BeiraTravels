@@ -8,7 +8,7 @@ import "./contact.css";
 import "../../index.css";
 
 //images
-import Banner from "../../assets/banner/banner-1.png";
+import Banner from "../../assets/banner/banner-contact-crocodile.png";
 
 export default function Contact() {
   return (
@@ -122,7 +122,7 @@ export default function Contact() {
                   <a href="/contact">Contact us</a>
                 </li>
                 <li>
-                  <a href="/contact">Reschedul booking</a>
+                  <a href="/contact">Reschedule booking</a>
                 </li>
                 <li>
                   <a href="/contact">Cancel Booking</a>
@@ -169,7 +169,7 @@ export default function Contact() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.instagram.com/beira_travels_/">
                         <FaInstagram />
                       </a>
                     </li>

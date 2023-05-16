@@ -4,7 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
 //images
-import Banner from "../../assets/banner/banner-1.png";
+import Banner from "../../assets/banner/banner-packages-leopard.png";
 
 //css
 import "../../index.css";
@@ -67,7 +67,7 @@ export default function Packages() {
                   <a href="/contact">Contact us</a>
                 </li>
                 <li>
-                  <a href="/contact">Reschedul booking</a>
+                  <a href="/contact">Reschedule booking</a>
                 </li>
                 <li>
                   <a href="/contact">Cancel Booking</a>
@@ -87,7 +87,7 @@ export default function Packages() {
                   <a href="/contact">Business Tours</a>
                 </li>
                 <li>
-                  <a href="/contact">Hotel Reservatins</a>
+                  <a href="/contact">Hotel Reservations</a>
                 </li>
                 <li>
                   <a href="/contact">Flight Booking</a>
@@ -114,7 +114,7 @@ export default function Packages() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.instagram.com/beira_travels_/">
                         <FaInstagram />
                       </a>
                     </li>

@@ -4,18 +4,18 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
 //images
-import Banner from "../../assets/banner/banner-1.png";
+import Banner from "../../assets/banner/banner-services-van.png";
 
 //css
 import "../../index.css";
 import "./services.css";
 
 import { BsAirplane } from "react-icons/bs";
-// import { FaHotel } from "react-icons/fa";
-// import { FaHospital } from "react-icons/fa";
-// import { FaCcVisa } from "react-icons/fa";
-// import { IoSchoolSharp } from "react-icons/io5";
-// import { BsFillPeopleFill } from "react-icons/bs";
+import { FaHotel } from "react-icons/fa";
+import { FaHospital } from "react-icons/fa";
+import { FaCcVisa } from "react-icons/fa";
+import { IoSchoolSharp } from "react-icons/io5";
+import { BsFillPeopleFill } from "react-icons/bs";
 
 export default function Services() {
   return (
@@ -46,57 +46,66 @@ export default function Services() {
       {/* Page content */}
       {/* <!-- Featured destinations    
                                   =========================================================--> */}
-      <section id="destinations">
-        <div className="container-destinations">
-          <div className="destination">
+      <section id="services">
+        <div className="container-services">
+          <div className="service-card">
             <div className="icon">
               <BsAirplane />
             </div>
-            <h3>Maasai Mara</h3>
+            <h3>Air Ticketing</h3>
             <p>
               Enjoy the beautiful beaches of Hawaii with this all-inclusive
               package!
             </p>
-            <a href="/destinations">More info</a>
           </div>
-          <div className="destination">
-            <h3>Amboseli</h3>
+          <div className="service-card">
+            <div className="icon">
+              <FaHotel />
+            </div>
+            <h3>Hotel Reservation</h3>
             <p>
               Explore the historic streets of Rome with this affordable package!
             </p>
-            <a href="/destinations">More info</a>
           </div>
-          <div className="destination">
-            <h3>Lake Nakuru</h3>
+          <div className="service-card">
+            <div className="icon">
+              <FaHospital />
+            </div>
+            <h3>Medical Tourism</h3>
             <p>
               Experience the magic of Disney World with this family-friendly
               package!
             </p>
-            <a href="/destinations">More info</a>
           </div>
-          <div className="destination">
-            <h3>Watamu</h3>
+          <div className="service-card">
+            <div className="icon">
+              <FaCcVisa />
+            </div>
+            <h3>Visa processing</h3>
             <p>
               Experience the magic of Disney World with this family-friendly
               package!
             </p>
-            <a href="/destinations">More info</a>
           </div>
-          <div className="destination">
-            <h3>Mount Kenya</h3>
+          <div className="service-card">
+            <div className="icon">
+              <IoSchoolSharp />
+            </div>
+            <h3>Educational Tourism</h3>
             <p>
               Experience the magic of Disney World with this family-friendly
               package!
             </p>
-            <a href="/destinations">More info</a>
           </div>
-          <div className="destination">
-            <h3>Tsavo national park</h3>
+          <div className="service-card">
+            <div className="icon">
+              <BsFillPeopleFill />
+            </div>
+            <h3>Honeymoon packages</h3>
             <p>
               Experience the magic of Disney World with this family-friendly
               package!
             </p>
-            <a href="/destinations">More info</a>
           </div>
         </div>
       </section>
@@ -131,7 +140,7 @@ export default function Services() {
                   <a href="/contact">Contact us</a>
                 </li>
                 <li>
-                  <a href="/contact">Reschedul booking</a>
+                  <a href="/contact">Reschedule booking</a>
                 </li>
                 <li>
                   <a href="/contact">Cancel Booking</a>
@@ -151,7 +160,7 @@ export default function Services() {
                   <a href="/contact">Business Tours</a>
                 </li>
                 <li>
-                  <a href="/contact">Hotel Reservatins</a>
+                  <a href="/contact">Hotel Reservations</a>
                 </li>
                 <li>
                   <a href="/contact">Flight Booking</a>
@@ -178,7 +187,7 @@ export default function Services() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.instagram.com/beira_travels_/">
                         <FaInstagram />
                       </a>
                     </li>

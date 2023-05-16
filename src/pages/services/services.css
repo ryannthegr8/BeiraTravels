@@ -12,3 +12,76 @@
   --container-width-md: 86%;
   --container-width-ms: 90%;
 }
+
+/* service card styling in the page content */
+#services {
+  padding-top: 5rem;
+  background-color: var(--color-white);
+  padding: 0 10%;
+  margin: 10px auto;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+
+.heading-destinations {
+  text-align: center;
+}
+
+.container-services {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-dominant);
+  font-size: 8rem;
+  margin: 2rem;
+}
+
+.service-card {
+  height: auto;
+  padding: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-white);
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.service-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.service-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.service-card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--color-dominant);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.service-card a:hover {
+  background-color: var(--color-dominant-variant);
+  color: var(--color-dominant);
+}

@@ -4,7 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
 //images
-import Banner from "../../assets/banner/banner-1.png";
+import Banner from "../../assets/banner/banner-about-lioness.png";
 
 //css
 import "../../index.css";
@@ -67,7 +67,7 @@ function About() {
                   <a href="/contact">Contact us</a>
                 </li>
                 <li>
-                  <a href="/contact">Reschedul booking</a>
+                  <a href="/contact">Reschedule booking</a>
                 </li>
                 <li>
                   <a href="/contact">Cancel Booking</a>
@@ -114,7 +114,7 @@ function About() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.instagram.com/beira_travels_/">
                         <FaInstagram />
                       </a>
                     </li>

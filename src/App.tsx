@@ -14,12 +14,16 @@ import Destinations from "./pages/destinations/Destinations";
 import Packages from "./pages/packages/Packages";
 import Services from "./pages/services/Services";
 import Contact from "./pages/contact/Contact";
+
+//scroll
+import ScrollToTop from "./components/scrollUp/ScrollToTop";
 //rfce
 //App is the parent component
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <header>
           {/* <!-- Navigation bar with links to other pages and logo 
                                   =====================================================--> */}
