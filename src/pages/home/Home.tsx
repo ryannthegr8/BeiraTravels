@@ -2,7 +2,6 @@
 import { FaFacebookF, FaPinterest } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaArrowUp } from "react-icons/fa";
 
 //css
 import "./home.css";
@@ -16,6 +15,8 @@ import lNakuru from "../../assets/lake-nakuru.jpg";
 import Watamu from "../../assets/watamu.jpg";
 import Tsavo from "../../assets/tsavo.jpeg";
 import MtKenya from "../../assets/mt. Kenya.jpg";
+
+//packages
 import MombasaPackage from "../../assets/packages/package-mombasa.jpg";
 import Package1 from "../../assets/packages/package-1.jpg";
 import Package2 from "../../assets/packages/package-2.jpg";
@@ -37,7 +38,7 @@ function Home() {
                 Planning a trip can be overwhelming, which is why we're here to
                 take care of everything for you
               </p>
-              <a href="">
+              <a href="/booking">
                 <button className="hero-button">Book Now</button>
               </a>
             </div>
@@ -177,10 +178,6 @@ function Home() {
             </section>
           </section>
           {/* <!-- End of popular packages --> */}
-
-          <a href="#" className="to-top">
-            <FaArrowUp />
-          </a>
         </main>
 
         {/* <!-- Footer [Copied on each page] 
@@ -259,7 +256,10 @@ function Home() {
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.instagram.com/beira_travels_/">
+                        <a
+                          href="https://www.instagram.com/beira_travels_/"
+                          target="_blank"
+                        >
                           <FaInstagram />
                         </a>
                       </li>
@@ -284,7 +284,7 @@ function Home() {
           </div>
         </footer>
       </div>
-      <a href=""></a>
+      <a href="">wtf</a>
     </>
   );
 }

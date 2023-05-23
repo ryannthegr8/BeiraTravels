@@ -17,6 +17,7 @@ import Contact from "./pages/contact/Contact";
 
 //scroll
 import ScrollToTop from "./components/scrollUp/ScrollToTop";
+import Booking from "./pages/booking/Booking";
 //rfce
 //App is the parent component
 function App() {
@@ -50,6 +51,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/booking" element={<Booking />} />
           </Routes>
         </main>
       </BrowserRouter>

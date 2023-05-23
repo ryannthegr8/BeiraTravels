@@ -44,7 +44,7 @@ export default function Services() {
       </section>
 
       {/* Page content */}
-      {/* <!-- Featured destinations    
+      {/* <!-- All services    
                                   =========================================================--> */}
       <section id="services">
         <div className="container-services">
@@ -109,7 +109,7 @@ export default function Services() {
           </div>
         </div>
       </section>
-      {/* <!-- End of featured destiations --> */}
+      {/* <!-- End of Page contet --> */}
 
       {/* <!-- Footer [Copied on each page] 
                                       =====================================================--> */}

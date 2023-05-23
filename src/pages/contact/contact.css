@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,25 +7,74 @@
 
 :root {
   /* colir variables */
-  --color-bg-variant: #2c2c6c;
+
   --color-dominant: #9e7940;
   --color-dominant-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-black: rgb(0, 0, 0);
+  --color-black-variant: #3a3a3a;
 }
 
 /* Input form and  contact info*/
-.container-contact {
+
+#contacts {
+  background-color: var(--color-white);
+  padding: 0 10%;
+  margin: 10px auto;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+
+.container-contacts {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.contact {
+  height: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-white);
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.contact:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+  font-family: poppins;
+}
+
+.contact p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact a {
+  text-decoration: none;
+  color: var(--color-dominant);
+  padding: 2px;
+}
+
+.contact a:hover {
+  background-color: var(--color-dominant-variant);
+  color: var(--color-dominant);
+}
+
+.socials-contact {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
-.left-contact {
-  flex-basis: 45%;
-}
-.right-contact {
-  flex-basis: 45%;
-}
+
 .form-group-contact {
   margin-bottom: 1rem;
 }
@@ -33,16 +83,15 @@
   margin-bottom: 0.5rem;
 }
 .form-group-contact input[type="text"] {
-  width: 50%;
+  width: 70%;
 }
 
 .form-group-contact input[type="email"],
 .form-group-contact textarea {
   display: block;
-  width: 100%;
+  width: 75%;
   padding: 0.5rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
   border-radius: 4px;
 }
 .form-group-conatact textarea {
@@ -50,15 +99,16 @@
 }
 .btn-contact {
   display: inline-block;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  padding: 10px 20px;
+  background-color: var(--color-dominant);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 .btn-contact:hover {
-  background-color: #0069d9;
+  background-color: var(--color-dominant-variant);
+  color: var(--color-dominant);
 }
