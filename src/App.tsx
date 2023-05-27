@@ -6,6 +6,7 @@ import logo from "./assets/logo.png";
 
 //css
 import "./index.css";
+import "./responsive.css";
 
 // pages
 import About from "./pages/about/About";
@@ -28,7 +29,7 @@ function App() {
         <header>
           {/* <!-- Navigation bar with links to other pages and logo 
                                   =====================================================--> */}
-          <nav>
+          <nav className="navbar">
             <NavLink to="/">
               <img className="logo" src={logo} alt="Beira Travels logo" />
             </NavLink>

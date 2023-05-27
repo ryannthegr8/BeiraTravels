@@ -1,0 +1,39 @@
+/* Homepage */
+/* nav */
+
+@media (max-width: 700px) {
+  .navbar .nav-links {
+    display: none;
+    background-color: purple;
+  }
+  .hero1 {
+    font-size: 20px;
+  }
+  .hero2 {
+    font-size: 40px;
+  }
+}
+
+/* Hero text and tagline */
+@media (max-width: 700px) {
+}
+
+/* Destinations */
+@media (max-width: 700px) {
+}
+
+/* Packages */
+@media (max-width: 700px) {
+}
+
+/* Our services */
+@media (max-width: 700px) {
+}
+
+/* About  */
+@media (max-width: 700px) {
+}
+
+/* contact us */
+@media (max-width: 700px) {
+}
