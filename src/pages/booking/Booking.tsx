@@ -249,20 +249,3 @@ function Booking() {
 }
 
 export default Booking;
-
-{
-  /* 
-              <!-- <---this is the select option--->
-              
-                    <span>How many people ?</span>
-                    <select name="people" id="people" required>
-                      <option value="">{/* <---People---> </option>
-                      <option value="1">1 People</option>
-                    
-                    </select> */
-}
-{
-  /*
-              <!-- <---this is the select option--->
-              */
-}
