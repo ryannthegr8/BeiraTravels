@@ -1,3 +1,7 @@
+//emailjs
+// import { FormEvent, useRef } from "react";
+// import emailjs from "@emailjs/browser";
+
 //icons
 import { FaFacebookF, FaPinterest } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -7,6 +11,28 @@ import { FaInstagram } from "react-icons/fa";
 import "./booking.css";
 
 function Booking() {
+  // const form = useRef<any | null | HTMLFormElement>(null);
+
+  // const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm(
+  //       "service_ehog0yr",
+  //       "template_tp58fbm",
+  //       form.current,
+  //       "GM4LWkf4VNj_Rs-rp"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //         alert("Message sent Successfullty");
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // };
   return (
     <>
       <section id="popular-booking">
@@ -23,7 +49,13 @@ function Booking() {
                 </p>
               </section>
               <div className="main-booking">
-                <form action="index.php" method="get">
+                {/* Beggining of the form */}
+                <form
+                  action="http://localhost:3000/book_trip"
+                  method="POST"
+                  // ref={form}
+                  // onSubmit={sendEmail}
+                >
                   <div>
                     <label htmlFor="name">Full Name</label>
                     <input
@@ -38,18 +70,18 @@ function Booking() {
                     <label htmlFor="mail">E-mail Address</label>
                     <input
                       type="email"
-                      name="name"
+                      name="mail"
                       id="mail"
                       placeholder="Your email"
                       required
                     />
                   </div>
                   <div>
-                    <label htmlFor="mail">ID Image (Optional)</label>
+                    <label htmlFor="IDcard">ID Image (Optional)</label>
                     <input
                       type="file"
-                      name="ID-card"
-                      id="ID-card"
+                      name="IDcard"
+                      id="IDcard"
                       placeholder="Your ID"
                     />
                   </div>
@@ -57,59 +89,59 @@ function Booking() {
                     <label htmlFor="residence">Residence</label>
                     <input
                       type="text"
-                      name="name"
+                      name="residence"
                       id="residence"
                       placeholder="Your recidence"
                       required
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone-no">Phone Number</label>
+                    <label htmlFor="phone">Phone Number</label>
                     <input
                       type="Number"
-                      name="Number"
-                      id="phone-no"
+                      name="phone"
+                      id="phone"
                       placeholder="Your number"
                       required
                     />
                   </div>
 
                   <div>
-                    <span>Subject</span>
+                    <label htmlFor="bookedDestination">Subject</label>
                     <input
                       type="text"
-                      name="name"
-                      id="name"
+                      name="bookedDestination"
+                      id="bookedDestination"
                       placeholder="Your destination"
                       required
                     />
                   </div>
                   <div>
-                    <span>Start Date</span>
+                    <label htmlFor="startDate">Start Date</label>
                     <input
                       type="date"
-                      name="date"
-                      id="date"
+                      name="startDate"
+                      id="startDate"
                       placeholder="Starting date"
                       required
                     />
                   </div>
                   <div>
-                    <span>End Date</span>
+                    <label htmlFor="endDate">End Date</label>
                     <input
                       type="date"
-                      name="date"
-                      id="date"
+                      name="endDate"
+                      id="endDate"
                       placeholder="End date"
                       required
                     />
                   </div>
                   <div>
-                    <span>Number of Adults</span>
+                    <label htmlFor="adults">Adults</label>
                     <input
                       type="text"
-                      name="name"
-                      id="name"
+                      name="adults"
+                      id="adults"
                       placeholder="Adults"
                     />
                   </div>
@@ -119,16 +151,16 @@ function Booking() {
                     </label>
                     <input
                       type="text"
-                      name="name"
+                      name="children"
                       id="children"
                       placeholder="Children"
                     />
                   </div>
                   <div>
-                    <label htmlFor="message-booking">Message</label>
+                    <label htmlFor="messageBooking">Message</label>
                     <textarea
-                      name="mesage"
-                      id="message-booking"
+                      name="messageBooking"
+                      id="messageBooking"
                       placeholder="Message"
                     ></textarea>
                   </div>
