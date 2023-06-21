@@ -59,11 +59,8 @@ app.post("/book_trip", (req, res) => {
     }
     console.log("Record Added Successfully");
   });
-  return (
-    res.send(
-      '<script>alert("Submitted successfully. Our team will be intouch")</script>'
-    ),
-    res.redirect("/")
+  return res.send(
+    '<script>alert("Submitted successfully. Our team will reach out")</script>'
   );
 });
 

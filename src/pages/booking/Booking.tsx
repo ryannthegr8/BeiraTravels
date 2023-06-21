@@ -1,6 +1,6 @@
 //emailjs
-// import { FormEvent, useRef } from "react";
-// import emailjs from "@emailjs/browser";
+import { FormEvent, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 //icons
 import { FaFacebookF, FaPinterest } from "react-icons/fa";
@@ -11,28 +11,28 @@ import { FaInstagram } from "react-icons/fa";
 import "./booking.css";
 
 function Booking() {
-  // const form = useRef<any | null | HTMLFormElement>(null);
+  const form = useRef<any | null | HTMLFormElement>(null);
 
-  // const sendEmail = (e: FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-  //   emailjs
-  //     .sendForm(
-  //       "service_ehog0yr",
-  //       "template_tp58fbm",
-  //       form.current,
-  //       "GM4LWkf4VNj_Rs-rp"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //         alert("Message sent Successfullty");
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
+    emailjs
+      .sendForm(
+        "service_29ysabq",
+        "template_tp58fbm",
+        form.current,
+        "GM4LWkf4VNj_Rs-rp"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent to agent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <section id="popular-booking">
@@ -53,8 +53,8 @@ function Booking() {
                 <form
                   action="http://localhost:3000/book_trip"
                   method="POST"
-                  // ref={form}
-                  // onSubmit={sendEmail}
+                  ref={form}
+                  onSubmit={sendEmail}
                 >
                   <div>
                     <label htmlFor="name">Full Name</label>
