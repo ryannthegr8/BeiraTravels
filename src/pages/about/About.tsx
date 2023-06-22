@@ -5,6 +5,8 @@ import { FaInstagram } from "react-icons/fa";
 
 //images
 import Banner from "../../assets/banner/banner-about-lioness.png";
+import about1 from "../../assets/about-1.png";
+import about2 from "../../assets/about-2.jpg";
 
 //css
 import "../../index.css";
@@ -28,15 +30,46 @@ function About() {
       <section className="home-intro">
         <p className="intro1">Hello Dear</p>
         <p className="intro2-dark">We are Beira Travels!</p>
-        <p className="intro3-dark">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
-          nostrum, quidem modi corporis illum sint ullam voluptate nobis! Amet,
-          ea necessitatibus numquam impedit cupiditate asperiores eum
-          reprehenderit fugiat debitis neque.
-        </p>
+        {/* <p className="intro3-dark">
+          
+        </p> */}
       </section>
 
       {/* Page content */}
+      <section className="packagesOverlay">
+        <div className="containerOverlay">
+          <img src={about1} alt="" />
+          <div className="boxOverlay">
+            <h2>About Beira</h2>
+
+            <p>
+              At Beira Travel , we are passionate about creating exceptional
+              travel experiences that leave a lasting impression.As a leading
+              tour and travel company, we specialize in crafting personalized
+              journeys that cater to the unique preferences and interests of our
+              clients. With a commitment to excellence and a deep understanding
+              of the travel industry, we strive to exceed expectations and
+              deliver unforgettable adventures.
+            </p>
+          </div>
+        </div>
+        <div className="containerOverlay">
+          <img src={about2} alt="" />
+          <div className="boxOverlay">
+            <h2>Our Mission</h2>
+            <p>
+              To perform and deliver excellent quality service to our clients.
+              Providing them unforgettable travel, enjoyable, with guaranteed
+              services that exceed their expectations With this objective, we
+              aim to earn the reputation as "Your Preferred Travel Agency". The
+              satisfaction of our customers and extraordinaryservice is the main
+              aim, saving your time and money while providing the best value for
+              your trip
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* End of Page content */}
 
       {/* <!-- Footer [Copied on each page] 
                                       =====================================================--> */}

@@ -9,6 +9,9 @@ import { FaInstagram } from "react-icons/fa";
 
 //images
 import Banner from "../../assets/banner/banner-destinations-lioness.png";
+import Amboseli from "../../assets/amboseli.jpg";
+import package14 from "../../assets/packages/package-14.jpg";
+import package8 from "../../assets/packages/package-8.jpg";
 
 export default function Destinations() {
   return (
@@ -37,6 +40,42 @@ export default function Destinations() {
       </section>
 
       {/* Page content */}
+      <section className="packagesOverlay">
+        <div className="containerOverlay">
+          <img src={package14} alt="" />
+          <div className="boxOverlay">
+            <h2>Kenya Coast</h2>
+
+            <p>
+              Discover the enchantment of Kenya's coastline: golden beaches,
+              turquoise waters, vibrant markets, historic sites, and indulgent
+              beachfront resorts.
+            </p>
+            <p>
+              <b>Price: ksh 52,000</b>
+            </p>
+            <a href="/booking">Book now</a>
+          </div>
+        </div>
+        <div className="containerOverlay">
+          <img src={package8} alt="" />
+          <div className="boxOverlay">
+            <h2>Mt kenya</h2>
+
+            <p>
+              "Embark on an awe-inspiring journey to Mount Kenya: majestic
+              peaks, breathtaking hikes, wildlife encounters, serene landscapes,
+              and cozy mountain lodges."
+            </p>
+            <p>
+              <b>Price: ksh 50,000</b>
+            </p>
+
+            <a href="/booking">Book Now</a>
+          </div>
+        </div>
+      </section>
+      {/* End of Page content */}
 
       {/* <!-- Footer [Copied on each page] 
                                       =====================================================--> */}

@@ -231,6 +231,8 @@ section.parallax.parallax-home {
   margin: 10px auto;
   text-transform: capitalize;
   padding-bottom: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .heading-destinations {
@@ -302,6 +304,8 @@ section.parallax.parallax-home {
   margin: 10px auto;
   text-transform: capitalize;
   padding-bottom: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .heading-packages {

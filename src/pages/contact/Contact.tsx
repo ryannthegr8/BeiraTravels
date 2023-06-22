@@ -29,10 +29,8 @@ export default function Contact() {
         <p className="intro1">Hello Dear</p>
         <p className="intro2-dark">We are Beira Travels!</p>
         <p className="intro3-dark">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
-          nostrum, quidem modi corporis illum sint ullam voluptate nobis! Amet,
-          ea necessitatibus numquam impedit cupiditate asperiores eum
-          reprehenderit fugiat debitis neque.
+          "Got questions or ready to embark on your next adventure? Contact our
+          dedicated team today. We're here to assist you every step of the way."
         </p>
       </section>
 
@@ -73,7 +71,9 @@ export default function Contact() {
               </li>
             </ul>
           </div>
-          <div className="contact">
+
+          {/* contact form */}
+          {/* <div className="contact">
             <h2>Need a travel Expert?</h2>
             <form action="#" method="POST">
               <div className="form-group-contact">
@@ -100,7 +100,7 @@ export default function Contact() {
                 SEND
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </section>
       {/* End of contact and details content */}

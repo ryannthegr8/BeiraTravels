@@ -5,6 +5,12 @@ import { FaInstagram } from "react-icons/fa";
 
 //images
 import Banner from "../../assets/banner/banner-packages-leopard.png";
+import Amboseli from "../../assets/amboseli.jpg";
+import package3 from "../../assets/packages/package-3.jpg";
+import package4 from "../../assets/packages/package-4.jpg";
+import package5 from "../../assets/packages/package-5.jpg";
+import package6 from "../../assets/packages/package-6.jpg";
+import package7 from "../../assets/packages/package-7.jpg";
 
 //css
 import "../../index.css";
@@ -29,14 +35,126 @@ export default function Packages() {
         <p className="intro1">Hello Dear</p>
         <p className="intro2-dark">We are Beira Travels!</p>
         <p className="intro3-dark">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
-          nostrum, quidem modi corporis illum sint ullam voluptate nobis! Amet,
-          ea necessitatibus numquam impedit cupiditate asperiores eum
-          reprehenderit fugiat debitis neque.
+          Experience paradise with our all-inclusive packages: pristine beaches,
+          luxurious accommodations, thrilling excursions, and unforgettable
+          cultural encounters.
         </p>
       </section>
 
       {/* Page content */}
+      <section className="packagesOverlay">
+        <div className="containerOverlay">
+          <img src={Amboseli} alt="" />
+          <div className="boxOverlay">
+            <h2>Abadare to maasai mara</h2>
+
+            <p>
+              Experience paradise with our all-inclusive package: luxurious
+              accommodations, thrilling excursions, and unforgettable cultural
+              encounters.<br></br>
+              Nairobi (1N)→Aberdare National Park (1N)→Lake Elmenteita
+              (1N)→Masai Mara (2N) 5 Nights 6 Days
+            </p>
+            <p>
+              <b>Price: ksh. 175,130</b>
+            </p>
+
+            <a href="/booking">Book now</a>
+          </div>
+        </div>
+        <div className="containerOverlay">
+          <img src={package3} alt="" />
+          <div className="boxOverlay">
+            <h2>Amboseli</h2>
+
+            <p>
+              Experience paradise with our all-inclusive package: luxurious
+              accommodations, thrilling excursions, and unforgettable cultural
+              encounters.<br></br>
+              Nairobi (1N)→Masai Mara (2N)→Lake Elmenteita (1N)→Aberdare (1N)
+            </p>
+            <p>
+              <b>Price: ksh 245,400</b>
+            </p>
+
+            <a href="/booking">Book Now</a>
+          </div>
+        </div>
+        <div className="containerOverlay">
+          <img src={package4} alt="" />
+          <div className="boxOverlay">
+            <h2>Amboseli</h2>
+
+            <p>
+              Experience paradise with our all-inclusive package: luxurious
+              accommodations, thrilling excursions, and unforgettable cultural
+              encounters.<br></br>
+              Nairobi (1N)→Masai Mara (2N)→Lake Elmenteita (1N)→Aberdare (1N)
+            </p>
+            <p>
+              <b>Price: ksh 245,400</b>
+            </p>
+
+            <a href="/booking">Book Now</a>
+          </div>
+        </div>
+        <div className="containerOverlay">
+          <img src={package5} alt="" />
+          <div className="boxOverlay">
+            <h2>Amboseli</h2>
+
+            <p>
+              Experience paradise with our all-inclusive package: luxurious
+              accommodations, thrilling excursions, and unforgettable cultural
+              encounters.<br></br>
+              Nairobi (1N)→Masai Mara (2N)→Lake Elmenteita (1N)→Aberdare (1N)
+            </p>
+            <p>
+              <b>Price: ksh 245,400</b>
+            </p>
+
+            <a href="/booking">Book Now</a>
+          </div>
+        </div>
+        <div className="containerOverlay">
+          <img src={package6} alt="" />
+          <div className="boxOverlay">
+            <h2>Maasai mara- Aberdare</h2>
+
+            <p>
+              Experience paradise with our all-inclusive package: luxurious
+              accommodations, thrilling excursions, and unforgettable cultural
+              encounters.<br></br> Nairobi (1N)→Masai Mara (2N)→Lake Elmenteita
+              (1N)→Aberdare (1N)
+            </p>
+            <p>
+              <b>Price: ksh 245,400</b>
+            </p>
+
+            <a href="/booking">Book Now</a>
+          </div>
+        </div>
+        <div className="containerOverlay">
+          <img src={package7} alt="" />
+          <div className="boxOverlay">
+            <h2>Abedare</h2>
+
+            <p>
+              Immerse yourself in the captivating wonders of Aberdare: lush
+              forests, cascading waterfalls, exotic wildlife, luxury lodges, and
+              exhilarating nature treks.
+              <br /> Nairobi (1N)→Aberdare (1N)→Lake Naivasha (2N)→Masai Mara
+              (2N) 6 night , 7 deays
+            </p>
+            <p>
+              <b>Price: ksh 245,400</b>
+            </p>
+
+            <a href="/booking">Book Now</a>
+          </div>
+        </div>
+      </section>
+      {/* End of content */}
 
       {/* <!-- Footer [Copied on each page] 
                                       =====================================================--> */}

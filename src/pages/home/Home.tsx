@@ -2,6 +2,7 @@
 import { FaFacebookF, FaPinterest } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+// import { FaChevronUp } from "react-icons/fa";
 
 //css
 import "./home.css";
@@ -17,11 +18,20 @@ import Tsavo from "../../assets/tsavo.jpeg";
 import MtKenya from "../../assets/mt. Kenya.jpg";
 
 //packages
-import MombasaPackage from "../../assets/packages/package-mombasa.jpg";
+import MombasaPackage from "../../assets/packages//package-14.jpg";
 import Package1 from "../../assets/packages/package-1.jpg";
 import Package2 from "../../assets/packages/package-2.jpg";
 
 function Home() {
+  const toTop = document.querySelector(".to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+      toTop!.classList.add("active");
+    } else {
+      toTop!.classList.remove("active");
+    }
+  });
   return (
     <>
       <div className="container-home">
@@ -38,7 +48,7 @@ function Home() {
                 Planning a trip can be overwhelming, which is why we're here to
                 take care of everything for you
               </p>
-              <a href="/booking">
+              <a href="/packages">
                 <button className="hero-button">Book Now</button>
               </a>
             </div>
@@ -49,10 +59,10 @@ function Home() {
             <p className="intro1">Hello Dear</p>
             <p className="intro2-dark">We are Beira Travels!</p>
             <p className="intro3-dark">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
-              nostrum, quidem modi corporis illum sint ullam voluptate nobis!
-              Amet, ea necessitatibus numquam impedit cupiditate asperiores eum
-              reprehenderit fugiat debitis neque.
+              World full of extraordinary adventures. Discover breathtaking
+              destinations, handcrafted itineraries, and personalized service.
+              Let us turn your travel dreams into unforgettable memories. Start
+              your journey now!
             </p>
           </section>
 
@@ -72,8 +82,8 @@ function Home() {
                 <img src={MaasaiMara} alt="Maasai Mara" />
                 <h3>Maasai Mara</h3>
                 <p>
-                  Enjoy the beautiful beaches of Hawaii with this all-inclusive
-                  package!
+                  Experience the historic culture of kenya with this
+                  family-friendly package!
                 </p>
                 <a href="/destinations">More info</a>
               </div>
@@ -81,8 +91,8 @@ function Home() {
                 <img src={Amboseli} alt="Amboseli" />
                 <h3>Amboseli</h3>
                 <p>
-                  Explore the historic streets of Rome with this affordable
-                  package!
+                  Experience the historic culture of kenya with this
+                  family-friendly package!
                 </p>
                 <a href="/destinations">More info</a>
               </div>
@@ -90,8 +100,8 @@ function Home() {
                 <img src={lNakuru} alt="Lake Nakuru" />
                 <h3>Lake Nakuru</h3>
                 <p>
-                  Experience the magic of Disney World with this family-friendly
-                  package!
+                  Experience the historic culture of kenya with this
+                  family-friendly package!
                 </p>
                 <a href="/destinations">More info</a>
               </div>
@@ -99,8 +109,8 @@ function Home() {
                 <img src={Watamu} alt="Watamu" />
                 <h3>Watamu</h3>
                 <p>
-                  Experience the magic of Disney World with this family-friendly
-                  package!
+                  Experience the historic culture of kenya with this
+                  family-friendly package!
                 </p>
                 <a href="/destinations">More info</a>
               </div>
@@ -108,8 +118,8 @@ function Home() {
                 <img src={MtKenya} alt="Mount Kenya" />
                 <h3>Mount Kenya</h3>
                 <p>
-                  Experience the magic of Disney World with this family-friendly
-                  package!
+                  Experience the historic culture of kenya with this
+                  family-friendly package!
                 </p>
                 <a href="/destinations">More info</a>
               </div>
@@ -117,8 +127,8 @@ function Home() {
                 <img src={Tsavo} alt="Tsavo" />
                 <h3>Tsavo national park</h3>
                 <p>
-                  Experience the magic of Disney World with this family-friendly
-                  package!
+                  Experience the historic culture of kenya with this
+                  family-friendly package!
                 </p>
                 <a href="/destinations">More info</a>
               </div>
@@ -142,8 +152,8 @@ function Home() {
                 <img src={MombasaPackage} alt="Mombasa" />
                 <h3>5 Days in Watamu</h3>
                 <p>
-                  Enjoy the beautiful beaches of Hawaii with this all-inclusive
-                  package!
+                  Experience the historic culture of kenya with this
+                  family-friendly package!
                 </p>
                 <a href="/packages">More info</a>
               </div>
@@ -151,8 +161,8 @@ function Home() {
                 <img src={Package2} alt="Package 2" />
                 <h3>Package 2</h3>
                 <p>
-                  Explore the historic streets of Rome with this affordable
-                  package!
+                  Experience the historic culture of kenya with this
+                  family-friendly package!
                 </p>
                 <a href="#">More info</a>
               </div>
@@ -160,8 +170,8 @@ function Home() {
                 <img src={Package1} alt="Package 3" />
                 <h3>Package 3</h3>
                 <p>
-                  Experience the magic of Disney World with this family-friendly
-                  package!
+                  Experience the historic culture of kenya with this
+                  family-friendly package!
                 </p>
                 <a href="#">More info</a>
               </div>
@@ -170,10 +180,10 @@ function Home() {
               <p className="intro1">Hello Dear</p>
               <p className="intro2-dark">We are Beira Travels!</p>
               <p className="intro3-dark">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
-                nostrum, quidem modi corporis illum sint ullam voluptate nobis!
-                Amet, ea necessitatibus numquam impedit cupiditate asperiores
-                eum reprehenderit fugiat debitis neque.
+                World full of extraordinary adventures. Discover breathtaking
+                destinations, handcrafted itineraries, and personalized service.
+                Let us turn your travel dreams into unforgettable memories.
+                Start your journey now!.
               </p>
             </section>
           </section>
@@ -284,7 +294,9 @@ function Home() {
           </div>
         </footer>
       </div>
-      <a href="">wtf</a>
+      <a href="#" className="to-top">
+        <i className="fas fa-chevron-up" aria-hidden="true"></i>
+      </a>
     </>
   );
 }

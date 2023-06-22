@@ -44,8 +44,8 @@ function Booking() {
                 <p className="intro1">Hello Dear</p>
                 <p className="intro2-dark">We are Beira Travels!</p>
                 <p className="intro3-dark">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Atque nostrum
+                  World full of extraordinary adventures. Lets start your
+                  journey now!
                 </p>
               </section>
               <div className="main-booking">
@@ -77,12 +77,12 @@ function Booking() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="IDcard">ID Image (Optional)</label>
+                    <label htmlFor="IDcard">ID Number (Optional)</label>
                     <input
-                      type="file"
+                      type="Number"
                       name="IDcard"
                       id="IDcard"
-                      placeholder="Your ID"
+                      placeholder="Your ID Number"
                     />
                   </div>
                   <div>
@@ -107,7 +107,9 @@ function Booking() {
                   </div>
 
                   <div>
-                    <label htmlFor="bookedDestination">Subject</label>
+                    <label htmlFor="bookedDestination">
+                      Subject (Specify your package)
+                    </label>
                     <input
                       type="text"
                       name="bookedDestination"
