@@ -26,7 +26,7 @@ function Booking() {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Message sent to agent");
+          alert("Message sent Successfully");
         },
         (error) => {
           console.log(error.text);
